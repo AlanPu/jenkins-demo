@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        cp hello.html /var/www.html/.
+        sh "cp hello.html /var/www.html/."
       }
     }
   }
